@@ -1,0 +1,19 @@
+.custom-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+
+  .buttons {
+    display: flex;
+  }
+}
+
+.item {
+  height: 15rem;
+  width: 13rem;
+  padding: 2rem;
+}

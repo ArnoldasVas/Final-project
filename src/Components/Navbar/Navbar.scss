@@ -1,0 +1,52 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: black;
+  color: white;
+  margin-bottom: 2rem;
+
+  .h1 {
+    a {
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        color: red;
+      }
+    }
+  }
+
+  .nav-img {
+    height: 50px;
+    width: 100px;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    column-gap: 2rem;
+
+    li {
+      color: rgb(196, 123, 28);
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: white;
+
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: var(--orange-100);
+        }
+        &:active,
+        &.active {
+          color: var(--orange-500);
+        }
+      }
+    }
+  }
+}
