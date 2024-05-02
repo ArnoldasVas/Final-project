@@ -1,0 +1,18 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  .btn {
+    border-radius: 1rem;
+    padding: 7px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(109, 109, 109);
+    }
+  }
+}

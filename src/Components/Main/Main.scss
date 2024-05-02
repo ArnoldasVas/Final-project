@@ -1,3 +1,4 @@
+
 .custom-container {
   display: flex;
   justify-content: center;
@@ -6,14 +7,14 @@
   max-width: 1000px;
   margin: 0 auto;
   padding-bottom: 2rem;
-
-  .buttons {
-    display: flex;
-  }
+  border-bottom: 1px;
 }
 
-.item {
-  height: 15rem;
-  width: 13rem;
+.item-card {
+  height: 20rem;
+  width: 15rem;
   padding: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  padding-top: 3rem;
 }

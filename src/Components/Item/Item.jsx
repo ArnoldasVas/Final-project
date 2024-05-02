@@ -1,15 +1,15 @@
-import React, { useContext } from 'react';
-import { AppContext } from '../../context/AppContext';
+import React from 'react';
 
 import './item.scss';
 
-function Item({ make, year, color, price, description }) {
+function Item({ make, year, color, price, description, img }) {
   return (
-    <div className="item">
+    <div className="item-card">
       <h2>{make}</h2>
-      <p>{year}</p>
-      <p>{color}</p>
-      <h3>{price}</h3>
+      <h4>Year: {year}</h4>
+      <img src={img} alt="" />
+      <p>Color: {color}</p>
+      <h3>Price: {price}$</h3>
       <p>{description}</p>
     </div>
   );

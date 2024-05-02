@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { AppContext } from '../../context/AppContext';
 import { handleSort } from '../../utils/sortUtils';
 import SortButtons from '../SortButtons/SortButtons';
@@ -15,19 +15,20 @@ function Main() {
 
   return (
     <main>
-      <div className="buttons">
+      <div>
         <SortButtons handleSortData={handleSortData} />
       </div>
       <div className="custom-container">
-        {data.map((item) => {
+        {data.map((items) => {
           return (
             <Item
-              key={item.make}
-              make={item.make}
-              description={item.description}
-              year={item.year}
-              color={item.color}
-              price={item.price}
+              key={items.make}
+              make={items.make}
+              description={items.description}
+              year={items.year}
+              color={items.color}
+              price={items.price}
+              img={items.img}
             />
           );
         })}

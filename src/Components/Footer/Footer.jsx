@@ -1,10 +1,8 @@
-import React, { useContext, useState } from 'react';
-import { AppContext } from '../../context/AppContext';
+import React from 'react';
 
 import './Footer.scss';
 
 function Footer() {
-  const {} = useContext(AppContext);
   return (
     <footer>
       <div className="footer">
